@@ -1,8 +1,8 @@
 .materias{
     border-style:dashed;
-    border-width: 2px;
+    border-width: 0.1vw;
     border-color: black;
-    padding: 5px;
+    padding: 0.5vw;
 
     display:inline-table;
     
@@ -10,6 +10,14 @@
     width: 46vw;
 }
 
+iframe{
+    height: 150px;
+}
+
 button{
     margin-bottom: 1vw;
+}
+
+summary{
+    user-select: none;
 }
