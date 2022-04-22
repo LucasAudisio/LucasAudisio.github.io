@@ -68,3 +68,4 @@ DELIMITER $$
 		select * from Mascotas where Mascotas.peso >= peso;
     end$$
 DELIMITER ;
+call imprimiDatosMascotaSegunPeso(6);
