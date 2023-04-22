@@ -17,8 +17,7 @@
         // Autenticación de Google
         gapi.load("auth2", function() {
         gapi.auth2.init({
-            client_id: "790024887155-bjiviv0pulpuomaebviv24p9659gnnbm.apps.googleusercontent.com",
-            cookie_policy: 'single_host_origin'
+            client_id: "790024887155-bjiviv0pulpuomaebviv24p9659gnnbm.apps.googleusercontent.com"
         }).then(function(auth2) {
             auth2.signIn().then(function() {
             // Token de acceso de OAuth
