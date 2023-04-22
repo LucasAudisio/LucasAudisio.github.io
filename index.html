@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba Api</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    <script>
+        /*const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfhYvBPTcWxV4e4Cp9tbBLmK-L8W1Z2ilB0D1wyjK6T0Tw6HQ/viewform"; // URL del formulario de Google
+        const formId = "1FAIpQLSeo6YbYqNmaxQgdHcUVrGoG72WkT0feiSW-7yA7F5cPD4Ly6A"; // Reemplaza "YOUR_FORM_ID" con el identificador de clave de API de tu formulario
+
+        // Función para enviar una solicitud a la API de respuestas del formulario
+        function getFormResponses() {
+        const apiUrl = `https://docs.google.com/forms/d/${formId}/formResponse`; // URL de la API de respuestas del formulario
+        fetch(apiUrl, { method: "GET" })
+            .then((response) => response.text())
+            .then((data) => {
+            // Analiza los datos y extrae los valores que necesites
+                console.log(data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+        }*/
+
+        const formId = "1FAIpQLSeo6YbYqNmaxQgdHcUVrGoG72WkT0feiSW-7yA7F5cPD4Ly6A"; // Reemplaza con el ID de tu formulario
+        const apiKey = "AIzaSyASoSvItVLgzpWcxoB-pQT4YJ6Gw_2zlzA"; // Reemplaza con tu clave de API
+
+        fetch(`https://forms.googleapis.com/forms/v1/responses/${formId}?key=${apiKey}`)
+        .then(response => response.json())
+        .then(data => console.log(data));
+    </script>
+</body>
+</html>
